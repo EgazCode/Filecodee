@@ -1,3 +1,15 @@
+
+// Memuat jadwal ketika halaman di-load
+window.onload = loadSchedule;
+
+document.getElementById('goToPage2')?.addEventListener('click', function() {
+    window.location.href = 'Page2.html';
+});
+
+document.getElementById('goToPage1')?.addEventListener('click', function() {
+    window.location.href = 'index.html';
+});
+
 document.getElementById('register-form').addEventListener('submit', function(event) {
     event.preventDefault();
     const username = document.getElementById('reg-username').value;
@@ -81,5 +93,3 @@ function loadSchedule() {
     });
 }
 
-// Memuat jadwal ketika halaman di-load
-window.onload = loadSchedule;
