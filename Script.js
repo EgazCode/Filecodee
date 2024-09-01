@@ -3,7 +3,11 @@
 window.onload = loadSchedule;
 
 document.getElementById('goToPage2')?.addEventListener('click', function() {
-    window.location.href = 'Page2.html';
+    window.location.href = 'Piket.html';
+});
+
+document.getElementById('goToPage3')?.addEventListener('click', function() {
+    window.location.href = 'Bioguru.html';
 });
 
 document.getElementById('goToPage1')?.addEventListener('click', function() {
