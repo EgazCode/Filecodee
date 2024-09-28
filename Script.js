@@ -8,7 +8,7 @@ const questionsContainer = document.getElementById('questions');
 const form = document.getElementById('cbtForm');
 const resultDiv = document.getElementById('result');
 const totalPointsPerQuestion = 5;
-const requiredIP = "192.168.160.143"; // IP hotspot (sesuaikan dengan IP hotspot HP)
+const requiredIP = "182.2.53.44"; // IP hotspot (sesuaikan dengan IP hotspot HP)
 
 window.onload = () => {
     checkIPAddress();
