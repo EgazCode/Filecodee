@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ujian Siswa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Ujian Siswa</h1>
+    <form id="examForm">
+        <!-- Soal pilihan ganda -->
+        <h2>Soal Pilihan Ganda</h2>
+        <div>
+            <p>1. Hasil dari 2 + 2 adalah?</p>
+            <input type="radio" name="q1" value="a"> A. 3<br>
+            <input type="radio" name="q1" value="b"> B. 4<br>
+            <input type="radio" name="q1" value="c"> C. 5<br>
+        </div>
+        <!-- Tambahkan soal PG lainnya -->
+
+        <!-- Soal jawaban singkat -->
+        <h2>Soal Jawaban Singkat</h2>
+        <div>
+            <p>1. Berapa hasil dari 5 × 5?</p>
+            <input type="text" name="q_short1"><br>
+        </div>
+        <!-- Tambahkan soal singkat lainnya -->
+
+        <!-- Soal Esai -->
+        <h2>Soal Esai</h2>
+        <div>
+            <p>1. Jelaskan tentang Pythagoras!</p>
+            <textarea name="essay1"></textarea><br>
+        </div>
+        <!-- Tambahkan soal esai lainnya -->
+
+        <button type="submit">Kirim Jawaban</button>
+    </form>
+
+    <script src="app.js"></script>
+</body>
+</html>

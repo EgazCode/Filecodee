@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Pengawas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Dashboard Pengawas</h1>
+    <div>
+        <h2>Profil Pengawas</h2>
+        <p>Nama: Pengawas 1</p>
+        <p>Email: pengawas1@example.com</p>
+
+        <h2>Absensi Siswa</h2>
+        <ul id="absensiSiswa">
+            <!-- Daftar siswa akan ditampilkan di sini -->
+        </ul>
+
+        <h2>Blokir Ujian Siswa</h2>
+        <button onclick="blockExam()">Blokir Ujian Siswa</button>
+    </div>
+
+    <script src="app.js"></script>
+    <script>
+        function blockExam() {
+            alert("Semua Ujian Siswa Telah Diblokir");
+        }
+
+        // Daftar absensi siswa
+        const absensiSiswa = document.getElementById('absensiSiswa');
+        studentData.forEach(student => {
+            const li = document.createElement('li');
+            li.textContent = `${student.username}`;
+            absensiSiswa.appendChild(li);
+        });
+    </script>
+</body>
+</html>
