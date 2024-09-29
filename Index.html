@@ -3,20 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CBT Ujian</title>
+    <title>Login CBT</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <h1>Ujian CBT</h1>
-        <form id="cbtForm">
-            <div id="questions">
-                <!-- Soal-soal akan ditambahkan oleh JavaScript -->
-            </div>
-            <button type="submit">Kirim Jawaban</button>
+    <h1>Login Ujian CBT</h1>
+    <div class="login-container">
+        <h2>Login Pengawas</h2>
+        <form id="adminLogin">
+            <input type="text" id="adminUsername" placeholder="Username Pengawas" required><br>
+            <input type="password" id="adminPassword" placeholder="Password" required><br>
+            <button type="submit">Login Pengawas</button>
         </form>
-        <div id="result"></div>
+
+        <h2>Login Siswa</h2>
+        <form id="studentLogin">
+            <input type="text" id="studentUsername" placeholder="Username Siswa" required><br>
+            <input type="password" id="studentPassword" placeholder="Password" required><br>
+            <input type="text" id="token" placeholder="Token Ujian" required><br>
+            <button type="submit">Login Siswa</button>
+        </form>
     </div>
-    <script src="script.js"></script>
+
+    <script src="app.js"></script>
 </body>
 </html>
